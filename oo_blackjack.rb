@@ -158,7 +158,7 @@ class Game
       play_again?
     elsif (players.select{|player| player.hand.value == 21}.size == no_players) && 
       (players.select{|player| player.hand.cards.size == 2}.size == no_players)
-      puts "Everyone gets BlackJack!"
+      puts "All Human players got BlackJack!"
       play_again?
     end
   end
